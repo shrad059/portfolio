@@ -10,7 +10,7 @@ export default function Intro() {
             <div className="intro-title">
               <div class="intro-name">
                 {" "}
-                Hi <span>Shraddha</span> here.{" "}
+                Hi, <span>Shraddha</span> here!{" "}
               </div>
             </div>
             <div className="intro-content">
