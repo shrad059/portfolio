@@ -14,7 +14,7 @@ export default function Intro() {
               </div>
             </div>
             <div className="intro-content">
-              I'm an (incoming) software engineer based in Halifax. I am highly
+              I'm an (upcoming) software engineer based in Halifax. I am highly
               interested in various areas of computer science, including
               full-stack development, artificial intelligence, and
               human-computer interactions.
