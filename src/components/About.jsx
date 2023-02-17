@@ -18,7 +18,7 @@ export default function About() {
     </div>
       <div className="wrapper">
         <div className="about-content">
-          I am currently a second- year student at <b><a href="#">Dalhousie University </a> </b>  double majoring in Computer Science and Physics. I am a very self-driven and motivated person. 
+          I am currently a second - year student at <b><a href="#">Dalhousie University </a> </b>  double majoring in Computer Science and Physics. I am a very self-driven and motivated person. 
           <div>
           <br/>Here are some technologies I have been working with:
           <ul className="skills-list">
