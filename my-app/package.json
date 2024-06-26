@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://shrad059.github.io/portfolio",
+  "homepage": "http://shraddhasingh.info/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
