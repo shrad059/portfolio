@@ -13,7 +13,7 @@ const projects = [
     name: "Tic-Tac Toe",
     description:"",
      image: tic,
-    source_code_link: "https://github.com/Shadannamazi/ArtVision-AI",
+    source_code_link: "https://github.com/shrad059/portfolio",
   },
   {
     name: "Path Finding Algorithm",
@@ -38,7 +38,7 @@ const projects = [
       },
     ],
     image: algorithm,
-    source_code_link: "https://github.com/Shadannamazi/ArtVision-AI",
+    source_code_link: "https://github.com/shrad059/portfolio",
   },
   {
     name: " Music Recommender",
@@ -62,7 +62,7 @@ const projects = [
       },
     ],
     image: music,
-    source_code_link: "https://github.com/Shadannamazi/ArtVision-AI",
+    source_code_link: "https://github.com/shrad059/portfolio",
   },
   {
     name: "TeleMedicine Chat App",
@@ -87,7 +87,7 @@ const projects = [
       },
     ],
     image: chat,
-    source_code_link: "https://github.com/Shadannamazi/ArtVision-AI",
+    source_code_link: "https://github.com/shrad059/portfolio",
   },
   {
     name: "Halifax Ecommerce App",
@@ -112,7 +112,7 @@ const projects = [
       },
     ],
     image: ecommerce,
-    source_code_link: "https://github.com/Shadannamazi/ArtVision-AI",
+    source_code_link: "https://github.com/shrad059/portfolio",
   },
 ];
 
