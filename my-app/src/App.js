@@ -8,8 +8,8 @@ import StarsBackground from './components/StarsBackground';
 function App() {
   return (
     <div className="App">
-      <StarsBackground/>
       <Header />
+      <StarsBackground/>
       <MainContent />
       <Footer />
     </div>
