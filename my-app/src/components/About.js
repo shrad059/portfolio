@@ -8,18 +8,18 @@ const About = () => {
         <h2 className="section-title padd-15">About Me</h2>
         <div className="row">
           <div className="about-img padd-15">
-            <img className="profileImg" src={profileImage}  alt="Profile" />
+            <img className="profileImg" src={profileImage} alt="Profile" />
           </div>
           <div className="about-content padd-15">
             <div className="rounded">
               <div className="row about-row">
                 <div className="about-text">
                   <p>
-                    Hello! I am Shraddha Singh, a third-year undergraduate student at <b>Dalhousie University</b> double majoring in Computer Science and Physics. I am passionate about both physics and software engineering, and have been trying to develop my knowledge and skills in both fields. I am particularly interested in machine learning, data analaysis, computer simulations and app development. Currently I am working as a research assistant studying properties of battery and its material properties at my university. 
+                    Hello! I am Shraddha Singh, a third-year undergraduate student at <b>Dalhousie University</b> double majoring in Computer Science and Physics. I am passionate about both physics and software engineering, and have been trying to develop my knowledge and skills in both fields. I am particularly interested in machine learning, data analysis, computer simulations, and app development. Currently, I am working as a research assistant studying properties of battery and its material properties at my university. 
                     Alongside this, I am working on my soon-to-launch startup focused on building housing and renting solutions to Haligonians (Stay-tuned)!
                   </p>
                   <div>
-                    <a href="Shraddha_Singh_Resume.pdf" id="contactBtn" className="btn btn-default" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME</a>
+                    <a href={require("../assets/Shraddha_Singh_Resume.pdf")} id="contactBtn" className="btn btn-default" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME</a>
                   </div>
                 </div>
                 <div className="about-text padd-15">
