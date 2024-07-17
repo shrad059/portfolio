@@ -115,29 +115,10 @@ const projects = [
     source_code_link: "https://github.com/shrad059/imisshome",
   },
   {
-    name: "End to End Chat App",
-    description:"",
-
-       tags: [
-      {
-        name: "swiftUI",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "coreML",
-        color: "green-text-gradient",
-      },
-      {
-        name: "openAI api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mapKit",
-        color: "blue-text-gradient",
-      },
-    ],
+    name: "Shortest Path Calculator",
+    description:"This project utilizes the brute force algorithm to solve the TSP, aiming to find an optimal path for visiting multiple provinces in Canada.",
     image: chat,
-    source_code_link: "https://github.com/shrad059/chat-room",
+    source_code_link: "https://github.com/shrad059/shortest-path",
   },
 ];
 
