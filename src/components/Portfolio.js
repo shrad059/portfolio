@@ -7,8 +7,9 @@ import { textVariant } from "../utils/motion"; // Ensure this path is correct
 import { Tilt } from "react-tilt";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faUserAstronaut, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ name, description, tags, image, github_link, source_code_link }) => {
   return (
     <div className="portfolio-item">
       <Tilt
@@ -22,11 +23,21 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
         <div>
           <img src={image} alt="project_image" className="project-image" />
           <div className="project-mask">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="project-link"
-            >
-              <FontAwesomeIcon icon={faGithub} className="git-icon" />
+            <div className="iconLink">
+              <div
+                onClick={() => window.open(github_link, "_blank")}
+                className="github-link"
+              >
+                <FontAwesomeIcon icon={faGithub} className="git-icon" />
+              </div>
+              {source_code_link && (
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className="project-link"
+                >
+                  <FontAwesomeIcon icon={faGlobe} className="git-icon" />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -34,7 +45,6 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           <p className="project-title">{name}</p>
           <p className="project-description">{description}</p>
         </div>
-        
       </Tilt>
     </div>
   );
@@ -44,10 +54,10 @@ const Portfolio = () => {
   return (
     <section className="portfolio-section" id="portfolio">
       <div className="container">
-          <motion.div variants={textVariant()}>
-            <h2 className="text-white text-3xl font-semibold mb-6">Projects</h2>
-          </motion.div>
-          <div className="portfolio-row">
+        <motion.div variants={textVariant()}>
+          <h2 className="text-white text-3xl font-semibold mb-6">Projects</h2>
+        </motion.div>
+        <div className="portfolio-row">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} {...project} />
           ))}

@@ -15,7 +15,7 @@ const projects = [
   //   name: "Tic-Tac Toe",
   //   description:"",
   //    image: tic,
-  //   source_code_link: "https://github.com/shrad059/portfolio",
+  //   github_link: "https://github.com/shrad059/portfolio",
   // },
   {
     name: "Multilingual Speech Chrome Extension",
@@ -40,7 +40,7 @@ const projects = [
       },
     ],
     image: start,
-    source_code_link: "https://github.com/shrad059/speech-translation",
+    github_link: "https://github.com/shrad059/speech-translation",
   },
   {
     name: " Music Recommender",
@@ -64,25 +64,27 @@ const projects = [
       },
     ],
     image: music,
-    source_code_link: "https://github.com/shrad059/Spotify_recommendation_system",
+    github_link: "https://github.com/shrad059/Spotify_recommendation_system",
   },
   {
     name: "Shortest Path Calculator",
     description:"This project utilizes the brute force algorithm to solve the TSP, aiming to find an optimal path for visiting multiple provinces in Canada.",
     image: map,
-    source_code_link: "https://github.com/shrad059/shortest-path",
+    github_link: "https://github.com/shrad059/shortest-path",
   },
   {
     name: "Resume Builder",
     description:" A free resume builder that generate a beautiful, formatted cv instantly from the plaintext builder. customize in a few clicks with live preview! Built using React and Next JS.",
     image: resume,
-    source_code_link: "https://github.com/shrad059/CV-Maker",
+    github_link: "https://github.com/shrad059/CV-Maker",
+    source_code_link:"https://cv-maker-olive.vercel.app/",
   },
   {
     name: "I Miss My Home",
     description:" A simple react app created to simulate the ambient sounds of India, or atleast my favorties 😌.",
     image: imissmyhome,
-    source_code_link: "https://github.com/shrad059/imisshome",
+    github_link: "https://github.com/shrad059/imisshome",
+    source_code_link:"https://shrad059.github.io/imisshome/",
   },
   {
     name: "Path Finding Algorithm",
@@ -107,7 +109,7 @@ const projects = [
       },
     ],
     image: algorithm,
-    source_code_link: "https://github.com/shrad059/A-Path-Finding-Algorithm",
+    github_link: "https://github.com/shrad059/A-Path-Finding-Algorithm",
   },
 ];
 
