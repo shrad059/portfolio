@@ -24,7 +24,9 @@ const About = () => {
                     Alongside this, I am working on my soon-to-launch startup focused on building housing and renting solutions to Haligonians (Stay-tuned)!
                   </p>
                   <div>
-                    <a href={require("../assets/Shraddha_Singh_Resume.pdf")} id="contactBtn" className="btn btn-default" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME</a>
+                    <a href="">
+                    {/* <a href={require("../assets/Shraddha_Singh_Resume.pdf")} id="contactBtn" className="btn btn-default" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME */}
+                    </a>
                   </div>
                 </div>
                 <div className="about-text padd-15">
