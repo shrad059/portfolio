@@ -187,7 +187,7 @@ const Home = () => {
             Hi, <span className="typing-name">Shraddha </span> here!
           </h2>
           <span className='intro-flex' >
-            I'm an aspiring data scientist  based in Halifax. I am highly interested in various areas of computer science, including simulations and computer vision, and I want to apply and use these tools to better study physics.
+            I'm an aspiring data scientist from Illinois! I am highly interested in various areas of computer science, including simulations and computer vision, and I want to apply and use these tools to better study physics.
           </span>
             <ul className='social-icons'>
               <li>
