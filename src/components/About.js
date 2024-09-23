@@ -1,5 +1,7 @@
 import React from 'react';
 import profileImage from '../assets/img/profile.jpg';
+// import EarthCanvas from "./canvas/Earth";
+import { EarthCanvas } from "./canvas";
 
 const About = () => {
   return (
@@ -7,6 +9,9 @@ const About = () => {
       <div className="container">
         <h2 className="section-title padd-15">About Me</h2>
         <div className="row">
+        {/* <div className='xl:flex-1 xl:h-auto padd-15' >
+          <EarthCanvas />
+        </div> */}
           <div className="about-img padd-15">
             <img className="profileImg" src={profileImage} alt="Profile" />
           </div>

@@ -5,6 +5,8 @@ import linkedin  from "../assets/img/linkedin.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope,faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { EarthCanvas } from "./canvas";
+
 const Home = () => {
   useEffect(() => {
     // Code to create and animate the tree
@@ -173,6 +175,9 @@ const Home = () => {
     <section className="home" id="home">
       <div className="container">
         <div className="intro">
+        {/* <div className='xl:flex-1 xl:h-auto' >
+          <EarthCanvas />
+        </div> */}
           <div className="tree-container">
             <div id="tree-multi"></div>
             <div id="tree-ratio"></div>

@@ -43,7 +43,7 @@
   ::-webkit-scrollbar
   {
     width: 0.6rem;
-    background: black;
+    /* background: black; */
   }
   ::-webkit-scrollbar-thumb
   {
@@ -82,7 +82,7 @@
  }
  body
  {
-    background: black;
+    /* background:black; */
     color: #F6E7D8;
    /* background-color: var(--color-dark);
    color: var(--color-dark); */
@@ -116,6 +116,38 @@
   margin-right: 10em;
   vertical-align: middle;
   }
+
+  .video-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.video-loader {
+  width: 100%;
+  max-width: 40vw;
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 500px;
+  height: 8px; 
+  background-color: #e9d9d0;
+  margin-top: 5px; 
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #9f5366; 
+  width: 0%; 
+  transition: width 0.2s ease; 
+}
+
 
 h2 {
       font-family: monospace;
