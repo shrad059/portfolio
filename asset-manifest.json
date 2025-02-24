@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fcd8fb7b.css",
-    "main.js": "/portfolio/static/js/main.2d040270.js",
+    "main.css": "/portfolio/static/css/main.d9ae57ea.css",
+    "main.js": "/portfolio/static/js/main.b357272c.js",
     "static/js/488.275c2ca8.chunk.js": "/portfolio/static/js/488.275c2ca8.chunk.js",
+    "static/media/picture.png": "/portfolio/static/media/picture.99985031c8b924888758.png",
     "static/media/1.png": "/portfolio/static/media/1.91cdfc72453bc80487be.png",
     "static/media/map.png": "/portfolio/static/media/map.1915b1bb41501861c65f.png",
     "static/media/imissmyhome.png": "/portfolio/static/media/imissmyhome.8ce8386a09a858fca3d2.png",
+    "static/media/pandemic.png": "/portfolio/static/media/pandemic.8c0852b6dc8e45ed4561.png",
     "static/media/resume.png": "/portfolio/static/media/resume.692f3eb04b1ea932834a.png",
     "static/media/6.gif": "/portfolio/static/media/6.b2d40b8492198bd2a2dd.gif",
+    "static/media/groovy.png": "/portfolio/static/media/groovy.a73f90bdc34689539e30.png",
     "static/media/4.png": "/portfolio/static/media/4.aa38ede6c1a8ab46a18b.png",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.4733681f2caec64d770a.jpg",
-    "static/media/6.png": "/portfolio/static/media/6.1ba16bc190c45c0cc6db.png",
+    "static/media/Nasalization Rg.otf": "/portfolio/static/media/Nasalization Rg.66ae317e021d4e15ec63.otf",
     "static/media/start.png": "/portfolio/static/media/start.08b9ba5e082eace8d65b.png",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.ac689c2459a4b86a8566.png",
+    "static/media/construction.jpg": "/portfolio/static/media/construction.4ed227c41b3449d0c377.jpg",
     "static/media/github.png": "/portfolio/static/media/github.ed1c06d925fff0b57e32.png",
     "index.html": "/portfolio/index.html",
-    "main.fcd8fb7b.css.map": "/portfolio/static/css/main.fcd8fb7b.css.map",
-    "main.2d040270.js.map": "/portfolio/static/js/main.2d040270.js.map",
+    "main.d9ae57ea.css.map": "/portfolio/static/css/main.d9ae57ea.css.map",
+    "main.b357272c.js.map": "/portfolio/static/js/main.b357272c.js.map",
     "488.275c2ca8.chunk.js.map": "/portfolio/static/js/488.275c2ca8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcd8fb7b.css",
-    "static/js/main.2d040270.js"
+    "static/css/main.d9ae57ea.css",
+    "static/js/main.b357272c.js"
   ]
 }
