@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import  github  from "../assets/img/github.png";
 import email from "../assets/img/email.png";
 import linkedin  from "../assets/img/linkedin.png";
@@ -6,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope,faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { EarthCanvas } from "./canvas";
+import React, { useEffect, useState } from 'react';
 
 const Home = () => {
   useEffect(() => {
@@ -137,11 +137,20 @@ const Home = () => {
       };
 
       const animate = function animate(time) {
-        requestId = window.requestAnimationFrame(animate);
         const timeDifference = time - animationStartTime;
         const angleDeg = timeDifference / 25;
+        
+        if (angleDeg >= 320) {
+          stopAnimation();
+          return;
+        }
+
         const angle = angleDeg * (Math.PI / 180);
         draw(multiplicity, ratio, angle);
+        
+        if (angleDeg < 360) {
+          requestId = window.requestAnimationFrame(animate);
+        }
       };
 
       const stopAnimation = function () {
@@ -163,14 +172,39 @@ const Home = () => {
       };
     };
 
-    const tree = createTree();
-    tree.startAnimation();
-
+    const tree = createTree().startAnimation();
+    
     return () => {
       tree.stopAnimation();
     };
   }, []);
-
+const hobbies = [
+  "grinding leetcode",
+  "brewing my chai tea",
+  "cafe hopping around Halifax",
+  "reading poetry",
+  "perfecting my spotify playlist",
+];
+  const [currentHobby, handleHobbyClick] = useWordCycle(hobbies);
+  const [tooltipShown, setTooltipShown] = useState(false);
+  function useWordCycle(words) {
+    const [currentWord, setCurrentWord] = useState(words[0]);
+  
+    const cycleWord = () => {
+      setCurrentWord(prev => {
+        let newWord;
+        do {
+          newWord = words[Math.floor(Math.random() * words.length)];
+        } while (newWord === prev); // Ensures a different word is chosen
+        return newWord;
+      });
+    };
+  
+    return [currentWord, cycleWord];
+  }
+  
+  
+  
   return (
     <section className="home" id="home">
       <div className="container">
@@ -187,7 +221,20 @@ const Home = () => {
             Hi, <span className="typing-name">Shraddha </span> here!
           </h2>
           <span className='intro-flex' >
-            I'm an aspiring data scientist from Illinois! I am highly interested in various areas of computer science, including simulations and computer vision, and I want to apply and use these tools to better study physics.
+                  <p style={{margin:"auto"}}>welcome to my little node of the internet!</p>I'm a student and aspiring software engineer based in Canada &#127809;. 
+        I enjoy building fun projects to bring joy to the web, collaborating with friends, and working on hard problems, with the goal of building something impactful!
+        <div> When I am not busy coding something,  I'm probably
+       {" "}<a
+  className="clickable"
+  id="hobbies"
+  onClick={handleHobbyClick}
+  onMouseEnter={() => setTooltipShown(true)}
+  onMouseLeave={() => setTooltipShown(false)}
+>{currentHobby}</a>
+</div>
+        
+
+
           </span>
             <ul className='social-icons'>
               <li>

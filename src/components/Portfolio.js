@@ -55,7 +55,26 @@ const Portfolio = () => {
     <section className="portfolio-section" id="portfolio">
       <div className="container">
         <motion.div variants={textVariant()}>
-          <h2 className="text-white text-3xl font-semibold mb-6">Projects</h2>
+          <div className="title-container">
+            <h2 className="section-title padd-15">Projects</h2>
+            <svg 
+              viewBox="0 0 170 12" 
+              className="wiggle-line"
+              style={{ 
+                width: '225px', 
+                height: '12px',
+                color: '#9f5366' // Match your text color
+              }}
+            >
+              <path
+                d="M 0 6 Q 5 0, 10 6 T 20 6 T 30 6 T 40 6 T 50 6 T 60 6 T 70 6 T 80 6 T 90 6 T 100 6 T 110 6 T 120 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="4" 
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
         </motion.div>
         <div className="portfolio-row">
           {projects.map((project, index) => (

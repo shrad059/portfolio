@@ -1,53 +1,75 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Header from './components/Header';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
-import StarsBackground from './components/StarsBackground';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
+import StarsBackground from "./components/StarsBackground";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
-    const [loading, setLoading] = useState(true);
-    const [progress, setProgress] = useState(0); // Track progress
+    const [showButton, setShowButton] = useState(false);
+    const [isScrolling, setIsScrolling] = useState(false);
+    const [isFlipping, setIsFlipping] = useState(false);
+    
+    // Initialize state from localStorage
+    const [showStars, setShowStars] = useState(() => {
+        const saved = localStorage.getItem("showStars");
+        return saved ? JSON.parse(saved) : false;
+    });
 
+    // Scroll detection
     useEffect(() => {
-        const timer = setInterval(() => {
-            setProgress((prevProgress) => (prevProgress < 100 ? prevProgress + 10 : 100));
-        }, 200); // Increase by 10% every 100 milliseconds
-
-        const loaderTimer = setTimeout(() => {
-            setLoading(false); // Stop loading after 1 second (adjust as needed)
-        }, 2000);
-
-        return () => {
-            clearInterval(timer);
-            clearTimeout(loaderTimer);
-        };
+        const handleScroll = () => setShowButton(window.scrollY > 300);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Persist star state
+    useEffect(() => {
+        localStorage.setItem("showStars", JSON.stringify(showStars));
+    }, [showStars]);
+
+    const toggleStarBackground = () => {
+        setIsFlipping(true);
+        setShowStars(prev => !prev);
+    };
+
+    const scrollToTop = () => {
+        setIsScrolling(true);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(() => setIsScrolling(false), 500);
+    };
 
     return (
         <div className="App">
-            {loading ? (
-                <div className="video-loader-container">
-                    <video autoPlay loop muted className="video-loader">
-                        <source src={process.env.PUBLIC_URL + "/loader.mp4"} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+            <Header />
+            {showStars && <StarsBackground />}
+            <MainContent />
+            <Footer />
 
-                    {/* Progress Bar */}
-                    <div className="progress-bar-container">
-                        <div
-                            className="progress-bar"
-                            style={{ width: `${progress}%` }}
-                        ></div>
-                    </div>
-                </div>
-            ) : (
-                <>
-                    <Header />
-                    <StarsBackground />
-                    <MainContent />
-                    <Footer />
-                </>
+            <button 
+                className="star-toggle"
+                onClick={toggleStarBackground}
+                onAnimationEnd={() => setIsFlipping(false)}
+            >
+                <FontAwesomeIcon 
+                    icon={showStars ? solidStar : regularStar} 
+                    size="2x"
+                    className={`star-icon ${isFlipping ? 'flip-animation' : ''} ${showStars ? 'star-active' : 'star-inactive'}`}
+                />
+            </button>
+
+            {showButton && (
+                <button
+                    className={`scroll-to-top ${isScrolling ? "scrolling" : ""}`}
+                    onClick={scrollToTop}
+                    onTransitionEnd={() => setIsScrolling(false)}
+                >
+                    <FontAwesomeIcon icon={faSpaceAwesome} style={{ fontSize: '32px' }} />
+                </button>
             )}
         </div>
     );

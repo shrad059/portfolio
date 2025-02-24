@@ -58,14 +58,39 @@ const Contacts = () => {
   };
 
   return (
-    <section className="contact section" id="contact" style={{ marginTop: '4rem' }}>
+    <section className="contact section" id="contact" >
       <div className="container">
-        <h2 className="section-title padd-15">Contact Me</h2>
+      <div className="title-container">
+        <h2 className="section-title padd-10">React out to me:</h2>
+        <svg 
+          viewBox="0 0 220 12" 
+          className="wiggle-line"
+          style={{ 
+            width: '245px',
+            height: '12px',
+            color: '#9f5366' // Matching your theme color
+          }}
+        >
+          <path
+            d="M 0 6 Q 5 0, 10 6 T 20 6 T 30 6 T 40 6 T 50 6 T 60 6 T 70 6 T 80 6 T 90 6 T 100 6 T 110 6 T 120 6 T 130 6 T 140 6 T 150 6 T 160 6 T 170 6 T 180 6 T 190 6 T 200 6 T 210 6 T 220 6 T 230 6 T 240 6 T  "
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4" 
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
+
         <div className="row">
           <div className="contact-box padd-15">
             <div className="contact-data">
+
+
+
+
+
+
               <div className="contact-information">
-                <h3 className="contact-subtitle">Reach out to me</h3>
                 <span className="contact-description">
                 <FontAwesomeIcon icon={faUserAstronaut}  className="contact-icon"/>
                   sh913738@dal.ca
