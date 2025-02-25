@@ -63,7 +63,7 @@ const Portfolio = () => {
               style={{ 
                 width: '225px', 
                 height: '12px',
-                color: '#9f5366' // Match your text color
+                color: '#4a3023' // Match your text color
               }}
             >
               <path

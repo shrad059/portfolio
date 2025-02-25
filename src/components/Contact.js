@@ -89,17 +89,24 @@ const Contacts = () => {
 
 
 
+            <div className="contact-information">
+  <span className="contact-description">
+    <FontAwesomeIcon icon={faUserAstronaut} className="contact-icon" />
+    sh913738@dal.ca
+  </span>
+{/* <span className="contact-github"> */}
+<span className="contact-description">
+        <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+        github.com/shrad059
+      </span>
+      <span className="contact-description">
+        <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
+        linkedin.com/in/shraddhasinggh
+      </span>
+{/* </span> */}
 
-              <div className="contact-information">
-                <span className="contact-description">
-                <FontAwesomeIcon icon={faUserAstronaut}  className="contact-icon"/>
-                  sh913738@dal.ca
-                </span>
-        {/* <FontAwesomeIcon icon={faGithub} className="icon" />
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faFileAlt} /> */}
 
-              </div>
+</div>
             </div>
           </div>
           <form ref={formRef} onSubmit={handleSubmit} className="contact-form padd-15">

@@ -15,7 +15,7 @@ const Footer = () => {
       <span> </span>and chai<span> </span>
       <span className="inline-block">
         <FontAwesomeIcon icon={faMugHot} />
-      </span>───────•
+      </span>─────•
     </p>        </div>
       </div>
     </footer>
