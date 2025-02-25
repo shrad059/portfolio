@@ -863,7 +863,7 @@ z-index: 10;
     .footer{
       width:100%;
       padding: 20px 0;
-      background-color: red;
+      /* background-color: red; */
     }
     .about-content,
     .about-img
