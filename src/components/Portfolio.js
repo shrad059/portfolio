@@ -69,7 +69,7 @@ const Portfolio = () => {
               <path
                 d="M 0 6 Q 5 0, 10 6 T 20 6 T 30 6 T 40 6 T 50 6 T 60 6 T 70 6 T 80 6 T 90 6 T 100 6 T 110 6 T 120 6"
                 fill="none"
-                stroke="currentColor"
+                stroke="#9f5366"
                 strokeWidth="4" 
                 strokeLinecap="round"
               />
